@@ -73,7 +73,7 @@ public class Converter
                     spaces = "";
                     if(familyActive) // if extra spaces are needed for the format to be correct while writing family members
                     {
-                        spaces = "    ";
+                        spaces = "  ";
                     }
                     output.append(spaces + "    <phone>\n"); // start of phone section
 
@@ -100,7 +100,7 @@ public class Converter
                     spaces = "";
                     if(familyActive)// if extra spaces are needed for the format to be correct while writing family members
                     {
-                        spaces = "    ";
+                        spaces = "  ";
                     }
 
                     output.append(spaces + "    <address>\n"); // start of address section
