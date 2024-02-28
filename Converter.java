@@ -32,7 +32,12 @@ public class Converter
             switch (lineSplit[0]) 
             {
                 case "P":
-                    familyActive = false; // removes extra spacing
+                    if(familyActive)
+                    {
+                        familyActive = false; // removes extra spacing
+                        output.append("    </family>\n");
+                    }   
+
                     if(personCounter > 0)
                     {
                         output.append("  </person>\n"); // end of person section
