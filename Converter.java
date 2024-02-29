@@ -49,22 +49,25 @@ public class Converter
                     
                    
                         // first name
-                    output.append("    <firstname>");
+                    
                     if(lineSplit.length > 1)
                     {
+                        output.append("    <firstname>");
                         output.append(lineSplit[1]); // this is the first name from input
+                        output.append("</firstname>\n");
                     }
-                    output.append("</firstname>\n");
+                    
                     
                     
                     
                     // last name
-                    output.append("    <lastname>");
                     if(lineSplit.length > 2)
                     {
-                        output.append(lineSplit[2]); // this is the last name from input
+                        output.append("    <lastname>");
+                        output.append(lineSplit[2]); // this is the last name from input'
+                        output.append("</lastname>\n");
                     }
-                    output.append("</lastname>\n");
+                    
                     
                     break; // this end the case, otherwise it goes to next case. Which is bad
             //___________________________________________________________________________________________________________
@@ -77,20 +80,22 @@ public class Converter
                     }
                     output.append(spaces + "    <phone>\n"); // start of phone section
 
-                    output.append(spaces + "      <mobile>");
+                    
                     if(lineSplit.length > 1)
                     {
+                        output.append(spaces + "      <mobile>");
                         output.append(lineSplit[1]); // this is the mobile number
+                        output.append("</mobile>\n");
                     }
-                    output.append("</mobile>\n");
+                   
 
-                    output.append(spaces + "      <landline>");
+                    
                     if(lineSplit.length > 2)
                     {
+                        output.append(spaces + "      <landline>");
                         output.append(lineSplit[2]); // this is the landline number
+                        output.append("</landline>\n");
                     }
-                    output.append("</landline>\n");
-
                     output.append(spaces + "    </phone>\n"); // end of phone section
 
                     break; // this end the case, otherwise it goes to next case. Which is bad
@@ -105,26 +110,28 @@ public class Converter
 
                     output.append(spaces + "    <address>\n"); // start of address section
 
-                    output.append(spaces + "      <street>");
+                    
                     if(lineSplit.length > 1)
                     {
+                        output.append(spaces + "      <street>");
                         output.append(lineSplit[1]); // this is the street name
+                        output.append("</street>\n");
                     }
-                    output.append("</street>\n");
-
-                    output.append(spaces + "      <city>");
+                    
                     if(lineSplit.length > 2)
                     {
+                        output.append(spaces + "      <city>");
                         output.append(lineSplit[2]); // this is the city name
+                        output.append("</city>\n");
                     }
-                    output.append("</city>\n");
-
-                    output.append(spaces + "      <zip>");
+                    
                     if(lineSplit.length > 3)
                     {
+                        output.append(spaces + "      <zip>");
                         output.append(lineSplit[3]); // this is the zip code
+                        output.append("</zip>\n");
                     }
-                    output.append("</zip>\n");
+                    
 
                     output.append(spaces + "    </address>\n"); // end of adress section
 
@@ -140,19 +147,21 @@ public class Converter
 
                     output.append("    <family>\n"); // start of family section
 
-                    output.append("      <name>");
+                    
                     if(lineSplit.length > 1)
                     {
+                        output.append("      <name>");
                         output.append(lineSplit[1]); // this is the name
+                        output.append("</street>\n");
                     }
-                    output.append("</street>\n");
-
-                    output.append("      <born>");
+                    
                     if(lineSplit.length > 2)
                     {
+                        output.append("      <born>");
                         output.append(lineSplit[2]); // this is the birthyear
+                        output.append("</born>\n");
                     }
-                    output.append("</born>\n");
+                    
 
                     break; // this end the case, otherwise it goes to next case. Which is bad
             //___________________________________________________________________________________________________________     
